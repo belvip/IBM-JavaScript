@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- 
+    Rectangle Area Calculator
+    A simple web application that calculates the area of a rectangle
+    based on user input for length and width
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle Area Calculator</title>
+    <link rel="stylesheet" href="calculate_Area.css" />
+</head>
+<body>
+    <h1>Rectangle Area Calculator</h1>
+    <!-- Input field for rectangle length -->
+    <label for="length">Enter the length: </label>
+    <input type="number" id="length"><br><br>
+
+    <!-- Input field for rectangle width -->
+    <label for="width">Enter the width: </label>
+    <input type="number" id="width"><br><br>
+
+    <!-- Button that triggers the calculation function -->
+    <button onclick="calculateArea()">Calculate Area</button><br><br>
+
+    <!-- Element where the calculation result will be displayed -->
+    <p id="result"></p>
+
+    <!-- JavaScript file with calculation logic -->
+    <script src="./calculate_Area.js"></script>
+</body>
+</html>
