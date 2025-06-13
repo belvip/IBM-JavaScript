@@ -28,3 +28,31 @@ let dessertItem = '';
 for (let i = 0; i < dessertMenu.length; i++) {
     dessertItem += `<p>Item ${i + 1}: ${dessertMenu[i]}</p>`;}
 document.getElementById('dessertMenuItems').innerHTML = dessertItem;
+
+
+const products = [
+    { name: 'Laptop', price: 1000, category: 'Electronics' },
+    { name: 'Shirt', price: 20, category: 'Clothing' },
+    { name: 'Headphones', price: 50, category: 'Electronics' },
+    { name: 'Shoes', price: 80, category: 'Clothing' },
+    { name: 'Smartphone', price: 500, category: 'Electronics' },
+    { name: 'Jeans', price: 50, category: 'Clothing' },
+    { name: 'Tablet', price: 300, category: 'Electronics' },
+    { name: 'Socks', price: 10, category: 'Clothing' },
+    { name: 'TV', price: 800, category: 'Electronics' },
+    { name: 'Dress', price: 150, category: 'Clothing' }
+];
+
+function filterProductsByPriceRange(products, minPrice, maxPrice) {
+    return products.filter((product) => product.price >= minPrice && product.price <= maxPrice);
+}
+
+const minPrice = 100;
+const maxPrice = 600;
+
+const filteredProducts = filterProductsByPriceRange(products, minPrice, maxPrice);
+
+filteredProducts.forEach((product) => {
+    //console.log(`Name: ${product.name}, Price: $${product.price}, Category: ${product.category}`);
+    console.log(`Name: ${product.name} is of $${product.price}}`);
+});
