@@ -20,8 +20,11 @@ function showweatherDetails(event) {
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     // Fetch weather data from the API
+    // This line returns a Promise
     fetch(apiUrl)
+    // This .then() handles the Promise returned by fetch
         .then(response => response.json())
+        // This .then() handles the Promise returned by response.json()
         .then(data => {
             // Update the UI with weather information
             const weatherInfo = document.getElementById('weatherInfo');
@@ -29,6 +32,7 @@ function showweatherDetails(event) {
             <p>Temperature: ${data.main.temp} &#8451;</p>
             <p>Weather: ${data.weather[0].description}</p>`;
         })
+        // This .catch() handles any rejected Promise in the chain
         .catch(error => {
             // Handle any errors that occur during the fetch operation
             console.error('Error fetching weather:', error);

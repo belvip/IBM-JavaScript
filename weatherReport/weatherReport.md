@@ -65,3 +65,44 @@ Showcase the practical application of asynchronous requests using `fetch()`, par
 - Graceful failure handling
 
 This code demonstrates proficiency in creating interactive web applications that communicate with external APIs while providing a responsive user experience.
+
+
+
+# The Three States of a Promise
+
+## Pending State
+When `fetch(apiUrl)` is called, it immediately returns a Promise in the pending state.
+
+```javascript
+// Promise is in pending state here
+fetch(apiUrl)
+```
+
+- ## Pending State
+During this time, the HTTP request is being made but hasn't completed yet.
+
+## Fulfilled State
+When the API request successfully completes, the Promise transitions to the fulfilled state, and the first `.then()` handler is executed.
+```javascript
+// Promise transitions to fulfilled state and this code runs
+.then(response => response.json())
+.then(data => {
+    // This code runs when the second Promise is fulfilled
+    const weatherInfo = document.getElementById('weatherInfo');
+    weatherInfo.innerHTML = `<h2>Weather in ${data.name}</h2>
+    <p>Temperature: ${data.main.temp} &#8451;</p>
+    <p>Weather: ${data.weather[0].description}</p>`;
+})
+```
+
+## Rejected State
+If the API request fails (network error, invalid URL, etc.) or if there's an error in any of the `.then()` handlers, the Promise transitions to the rejected state, and the `.catch()` handler is executed.
+
+```javascript
+// This code runs if any Promise in the chain is rejected
+.catch(error => {
+    console.error('Error fetching weather:', error);
+    const weatherInfo = document.getElementById('weatherInfo');
+    weatherInfo.innerHTML = `<p>Failed to fetch weather. Please try again.</p>`;
+})
+```
