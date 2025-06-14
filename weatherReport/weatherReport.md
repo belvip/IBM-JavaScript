@@ -1,0 +1,67 @@
+# Call API to Fetch Weather Data Using `fetch()`
+
+## What You Will Learn
+In this lab, you will integrate an external API, OpenWeatherMap, into a web application using JavaScript. You will learn how to:
+- Fetch data asynchronously.
+- Parse JSON responses.
+- Dynamically update the webpage based on received information.
+
+This lab will provide a foundational understanding of API integration, asynchronous operations, DOM manipulation, and user interaction in web development.
+
+## Learning Objectives
+After completing this lab, you will be able to:
+
+### User-Friendly Weather Retrieval
+Enable user input for city names, facilitating the retrieval of real-time weather information via an intuitive web interface.
+
+### API Integration for Weather Data
+Utilize the OpenWeatherMap API to fetch precise weather data based on user-entered cities, dynamically displaying temperature and weather descriptions on the webpage.
+
+### HTML Form Submission Handling and JS Event Implementation
+Manage form submissions within HTML and implement event listeners in JavaScript, ensuring smooth user interactions and data retrieval processes.
+
+### Demonstration of Asynchronous Requests and Dynamic DOM Updates
+Showcase the practical application of asynchronous requests using `fetch()`, parsing JSON responses, and dynamically updating the DOM to display fetched weather details seamlessly, eliminating the need for page refreshes.
+
+## Prerequisites
+- Basic knowledge of HTML.
+- Web browser with a console (Chrome DevTools, Firefox Console, etc.).
+
+
+# Weather Report JavaScript Skills Demonstration
+
+## Key Skills Demonstrated
+
+### 1. Event Handling
+- Form submission capture using `addEventListener`
+- Prevention of default form behavior with `event.preventDefault()`
+
+### 2. DOM Manipulation
+- Retrieving user input: `document.getElementById('city').value`
+- Dynamic content updates: `weatherInfo.innerHTML = ...`
+
+### 3. API Integration
+- External API calls to OpenWeatherMap service
+- URL parameter construction with template literals
+
+### 4. Asynchronous Programming
+- `fetch()` API for HTTP requests
+- Promise chaining with `.then()`
+- Error handling with `.catch()`
+
+### 5. Modern JavaScript Features
+- Template literals for string interpolation
+- Arrow functions for concise callbacks
+- ES6 variable declarations (`const`, `let`)
+
+### 6. Data Processing
+- JSON parsing with `response.json()`
+- Navigating nested JSON objects (`data.weather[0].description`)
+- HTML entity usage (`&#8451;` for Celsius symbol)
+
+### 7. Error Handling
+- Console error logging
+- User-friendly error messages
+- Graceful failure handling
+
+This code demonstrates proficiency in creating interactive web applications that communicate with external APIs while providing a responsive user experience.
