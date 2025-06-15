@@ -1,0 +1,106 @@
+{
+    "conditions": [
+        {
+            "name": "Thyroid",
+            "imagesrc":"thyroid.png",
+            "symptoms": [
+            "Fatigue",
+            "Weight gain or loss",
+            "Dry skin",
+            "Muscle weakness",
+            "Irregular menstrual periods"
+            ],
+            "prevention": [
+            "Eat a balanced diet",
+            "Exercise regularly",
+            "Get regular check-ups"
+            ],
+            "treatment": "Medication like levothyroxine may be prescribed by a doctor."
+        },
+        {
+            "name": "Diabetes",
+            "imagesrc":"diabeties.webp",
+            "symptoms": [
+            "Frequent urination",
+            "Increased thirst",
+            "Blurry vision",
+            "Fatigue",
+            "Slow healing of cuts or sores"
+            ],
+            "prevention": [
+            "Maintain a healthy weight",
+            "Follow a balanced diet",
+            "Regular exercise"
+            ],
+            "treatment": "Management includes medication, insulin therapy, and lifestyle changes."
+        },
+        {
+            "name": "High Blood Pressure",
+            "imagesrc":"blood_pressure.png",
+            "symptoms": [
+            "Headaches",
+            "Shortness of breath",
+            "Chest pain",
+            "Dizziness",
+            "Blurred or double vision"
+            ],
+            "prevention": [
+            "Reduce salt intake",
+            "Exercise regularly",
+            "Maintain a healthy weight"
+            ],
+            "treatment": "Medications like ACE inhibitors or diuretics may be prescribed."
+        },
+        {
+            "name": "Asthma",
+            "imagesrc":"asthma.png",
+            "symptoms": [
+            "Shortness of breath",
+            "Chest tightness or pain",
+            "Wheezing when exhaling",
+            "Trouble sleeping due to breathing difficulties",
+            "Coughing attacks worsened by respiratory infections"
+            ],
+            "prevention": [
+            "Identify and avoid asthma triggers",
+            "Use air purifiers",
+            "Get vaccinated for influenza and pneumonia"
+            ],
+            "treatment": "Inhalers (bronchodilators and corticosteroids) and oral medications."
+        },
+        {
+            "name": "Arthritis",
+            "imagesrc":"arthritis.png",
+            "symptoms": [
+            "Joint pain",
+            "Stiffness",
+            "Swelling",
+            "Decreased range of motion",
+            "Redness around joints"
+            ],
+            "prevention": [
+            "Maintain a healthy weight",
+            "Stay physically active",
+            "Avoid joint injuries"
+            ],
+            "treatment": "Pain relievers, anti-inflammatory drugs, physical therapy, and in severe cases, surgery."
+        },
+        {
+            "name": "Depression",
+            "imagesrc":"depression.png",
+            "symptoms": [
+            "Persistent sadness",
+            "Loss of interest in activities",
+            "Changes in appetite or weight",
+            "Sleep disturbances",
+            "Difficulty concentrating"
+            ],
+            "prevention": [
+            "Regular physical activity",
+            "Maintain social connections",
+            "Stress management techniques"
+            ],
+            "treatment": "Psychotherapy, medication (antidepressants), lifestyle changes, and support groups."
+        }
+    ]
+}
