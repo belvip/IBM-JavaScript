@@ -106,3 +106,40 @@ If the API request fails (network error, invalid URL, etc.) or if there's an err
     weatherInfo.innerHTML = `<p>Failed to fetch weather. Please try again.</p>`;
 })
 ```
+
+## There are several callback functions in this file:
+### 1. Event Listener Callback:
+```javascript
+document.getElementById('weatherForm').addEventListener('submit', showweatherDetails);
+```
+  - Here, showweatherDetails is a callback function that gets executed when the form submission event occurs.
+
+### 2. Promise Callbacks in the .then() Methods:
+```javascript
+.then(response => response.json())
+```
+
+  - This arrow function is a callback that receives the response object and returns the result of calling response.json().
+
+```javascript
+.then(data => {
+    const weatherInfo = document.getElementById('weatherInfo');
+    weatherInfo.innerHTML = `<h2>Weather in ${data.name}</h2>
+    <p>Temperature: ${data.main.temp} &#8451;</p>
+    <p>Weather: ${data.weather[0].description}</p>`;
+})
+```
+
+   - This arrow function is another callback that receives the parsed JSON data and updates the UI.
+
+### 3. Error Handling Callback in the .catch() Method:
+
+```javascript
+.catch(error => {
+    console.error('Error fetching weather:', error);
+    const weatherInfo = document.getElementById('weatherInfo');
+    weatherInfo.innerHTML = `<p>Failed to fetch weather. Please try again.</p>`;
+})
+```
+
+   - This arrow function is a callback that handles any errors that occur during the fetch operation.
